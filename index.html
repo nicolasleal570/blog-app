@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Blog App</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <section class="header" id="header">
+      <!-- Menu -->
+      <nav class="menu">
+        <div class="logo">
+          <img src="./img/logo.svg" alt="Logo Blog" />
+          <p>Bass Blog</p>
+        </div>
+
+        <button class="btn-hamburguer">
+          <img src="./img/menu.svg" alt="Menu" />
+        </button>
+
+        <ul class="navbar">
+          <li>Home</li>
+          <li>Posts</li>
+          <li>Categories</li>
+          <li>Contact</li>
+          <li class="login">Login</li>
+          <li class="sign-up">Sign Up</li>
+        </ul>
+      </nav>
+
+      <!-- Welcome message -->
+      <div class="welcome">
+        <h1>Welcome to <span>Bass Blog</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
+          neque id lectus luctus mattis. Nullam vitae tempor nisi, et
+          ullamcorper nibh.
+        </p>
+        <div class="input-with-button">
+          <input type="text" placeholder="Search Posts" />
+          <button type="button">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+    <section class="section categories" id="categories">
+      <div class="wrapper">
+        <div class="section-title">
+          <p>See Some Categories</p>
+          <a href="#">
+            View All
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.87774 4.06524C8.91838 4.0245 8.96666 3.99217 9.01981 3.97011C9.07296 3.94806 9.12994 3.93671 9.18749 3.93671C9.24503 3.93671 9.30202 3.94806 9.35517 3.97011C9.40832 3.99217 9.4566 4.0245 9.49724 4.06524L12.1222 6.69024C12.163 6.73088 12.1953 6.77916 12.2174 6.83231C12.2394 6.88546 12.2508 6.94244 12.2508 6.99999C12.2508 7.05753 12.2394 7.11452 12.2174 7.16767C12.1953 7.22082 12.163 7.2691 12.1222 7.30974L9.49724 9.93474C9.41509 10.0169 9.30367 10.063 9.18749 10.063C9.07131 10.063 8.95989 10.0169 8.87774 9.93474C8.79559 9.85259 8.74944 9.74117 8.74944 9.62499C8.74944 9.50881 8.79559 9.39739 8.87774 9.31524L11.1939 6.99999L8.87774 4.68474C8.837 4.6441 8.80467 4.59582 8.78262 4.54267C8.76056 4.48952 8.74921 4.43253 8.74921 4.37499C8.74921 4.31744 8.76056 4.26046 8.78262 4.20731C8.80467 4.15416 8.837 4.10588 8.87774 4.06524Z"
+                fill="currentColor"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.75 7C1.75 6.88397 1.79609 6.77269 1.87814 6.69064C1.96019 6.60859 2.07147 6.5625 2.1875 6.5625H11.375C11.491 6.5625 11.6023 6.60859 11.6844 6.69064C11.7664 6.77269 11.8125 6.88397 11.8125 7C11.8125 7.11603 11.7664 7.22731 11.6844 7.30936C11.6023 7.39141 11.491 7.4375 11.375 7.4375H2.1875C2.07147 7.4375 1.96019 7.39141 1.87814 7.30936C1.79609 7.22731 1.75 7.11603 1.75 7Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="section-content section-cols-3">
+          <div class="card-category">
+            <h3>Javascript <span>To ReactJS</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">See Posts</a>
+          </div>
+          <div class="card-category">
+            <h3>Javascript <span>To ReactJS</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">See Posts</a>
+          </div>
+          <div class="card-category">
+            <h3>Javascript <span>To ReactJS</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">See Posts</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSTS SECTION -->
+    <section class="section posts" id="posts">
+      <div class="wrapper">
+        <div class="section-title">
+          <p>Trending Posts</p>
+          <a href="#">
+            View All
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.87774 4.06524C8.91838 4.0245 8.96666 3.99217 9.01981 3.97011C9.07296 3.94806 9.12994 3.93671 9.18749 3.93671C9.24503 3.93671 9.30202 3.94806 9.35517 3.97011C9.40832 3.99217 9.4566 4.0245 9.49724 4.06524L12.1222 6.69024C12.163 6.73088 12.1953 6.77916 12.2174 6.83231C12.2394 6.88546 12.2508 6.94244 12.2508 6.99999C12.2508 7.05753 12.2394 7.11452 12.2174 7.16767C12.1953 7.22082 12.163 7.2691 12.1222 7.30974L9.49724 9.93474C9.41509 10.0169 9.30367 10.063 9.18749 10.063C9.07131 10.063 8.95989 10.0169 8.87774 9.93474C8.79559 9.85259 8.74944 9.74117 8.74944 9.62499C8.74944 9.50881 8.79559 9.39739 8.87774 9.31524L11.1939 6.99999L8.87774 4.68474C8.837 4.6441 8.80467 4.59582 8.78262 4.54267C8.76056 4.48952 8.74921 4.43253 8.74921 4.37499C8.74921 4.31744 8.76056 4.26046 8.78262 4.20731C8.80467 4.15416 8.837 4.10588 8.87774 4.06524Z"
+                fill="currentColor"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.75 7C1.75 6.88397 1.79609 6.77269 1.87814 6.69064C1.96019 6.60859 2.07147 6.5625 2.1875 6.5625H11.375C11.491 6.5625 11.6023 6.60859 11.6844 6.69064C11.7664 6.77269 11.8125 6.88397 11.8125 7C11.8125 7.11603 11.7664 7.22731 11.6844 7.30936C11.6023 7.39141 11.491 7.4375 11.375 7.4375H2.1875C2.07147 7.4375 1.96019 7.39141 1.87814 7.30936C1.79609 7.22731 1.75 7.11603 1.75 7Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="section-content section-cols-3">
+          <div class="card-post large">
+            <div class="card-img">
+              <img
+                src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80"
+                alt="Post Photo"
+              />
+            </div>
+            <div class="card-body">
+              <p class="tag">Javascript To React</p>
+              <h3 class="title">
+                Learn how to use Map javascript functions to print some data.
+              </h3>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                vel neque id lectus luctus mattis. Nullam vitae tempor nisi, et
+                ullamcorper nibh. Cras nisl leo, pretium in nisl nec, tempor
+                feugiat ante. Etiam feugiat elementum egestas.
+              </p>
+
+              <div class="card-author">
+                <div class="author-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                    alt="Author Img"
+                  />
+                </div>
+                <div class="author-info">
+                  <p class="author-name">María Simmons</p>
+                  <p class="author-cargo">UX Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-post">
+            <div class="card-img">
+              <img
+                src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                alt="Post Photo"
+              />
+            </div>
+            <div class="card-body">
+              <p class="tag">User Experience</p>
+              <h3 class="title">UX challenges to solve in 2021</h3>
+            </div>
+            <div class="card-author">
+              <div class="author-img">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  alt="Author Img"
+                />
+              </div>
+              <div class="autor-info">
+                <p class="author-name">María Simmons</p>
+                <p class="author-cargo">UX Designer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-post">
+            <div class="card-img">
+              <img
+                src="https://images.unsplash.com/photo-1521391406205-4a6af174a4c2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1375&q=80"
+                alt="Post Photo"
+              />
+            </div>
+            <div class="card-body">
+              <p class="tag">UI Design</p>
+              <h3 class="title">A guide of UI design trends for 2021.</h3>
+            </div>
+            <div class="card-author">
+              <div class="author-img">
+                <img
+                  src="https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  alt="Author Img"
+                />
+              </div>
+              <div class="autor-info">
+                <p class="author-name">Karla Richards</p>
+                <p class="author-cargo">UI Designer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-post">
+            <div class="card-img">
+              <img
+                src="https://images.unsplash.com/photo-1573497019414-e44d0759d00e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                alt="Post Photo"
+              />
+            </div>
+            <div class="card-body">
+              <p class="tag">User Experience</p>
+              <h3 class="title">
+                Your resume is just as important as your portfolio.
+              </h3>
+            </div>
+            <div class="card-author">
+              <div class="author-img">
+                <img
+                  src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                  alt="Author Img"
+                />
+              </div>
+              <div class="autor-info">
+                <p class="author-name">Ronald Richards</p>
+                <p class="author-cargo">Software Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact" id="contact">
+      <div class="wrapper">
+        <div class="section-title">
+          <p>Contact Us</p>
+        </div>
+        <div class="section-content">
+          <div class="description-container">
+            <p class="description">
+              Stay informed of updates and new publications
+            </p>
+            <div class="input-with-button">
+              <input type="text" placeholder="Enter your email" />
+              <button type="button">Subscribe</button>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="./img/mail.svg" alt="Mail Icon" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="section footer">
+        <div class="wrapper">
+          <div class="logo">
+            <img src="./img/logo-footer.svg" alt="Logo footer" />
+            <p>BASS BLOG</p>
+          </div>
+          <div class="separator"></div>
+          <div class="links-container">
+            <ul class="menu-links">
+              <li class="link-item"><a href="#">Home</a></li>
+              <li class="link-item"><a href="#">Posts</a></li>
+              <li class="link-item"><a href="#">Categories</a></li>
+              <li class="link-item"><a href="#">Contact</a></li>
+            </ul>
+            <ul class="social-links">
+              <li class="link-item">
+                <img src="./img/instagram-icon.svg" alt="Instagram Icon" />
+              </li>
+              <li class="link-item">
+                <img src="./img/twitter-icon.svg" alt="Twitter Icon" />
+              </li>
+              <li class="link-item">
+                <img src="./img/slack-icon.svg" alt="Slack Icon" />
+              </li>
+              <li class="link-item">
+                <img src="./img/youtube-icon.svg" alt="Youtube Icon" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">
+        This website was made by Nicolás Leal. 2021 Copyright
+      </p>
+    </footer>
+  </body>
+</html>
