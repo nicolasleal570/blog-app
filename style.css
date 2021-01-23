@@ -312,7 +312,7 @@ a {
 
 .contact .section-content {
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr;
 }
 
 .contact .section-content .description-container .description {
@@ -321,6 +321,7 @@ a {
 }
 
 .contact .section-content .img-container {
+  display: none;
   position: relative;
 }
 .contact .section-content .img-container img {
@@ -542,5 +543,14 @@ a {
   .posts .card-post.large .card-body {
     flex: 2;
     margin: 0;
+  }
+
+  /* === CONTACT SECTION === */
+  .contact .section-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+  }
+  .contact .section-content .img-container {
+    display: block;
   }
 }
