@@ -8,20 +8,65 @@
   </head>
   <body>
     <!-- HEADER SECTION -->
-    <section class="header" id="header">
+    <section class="header" id="headerContainer">
       <!-- Menu -->
-      <nav class="menu">
+      <nav class="menu" id="navbarContainer">
         <div class="logo">
-          <img src="./img/logo.svg" alt="Logo Blog" />
+          <svg
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 30 30"
+            width="2500"
+            height="2500"
+          >
+            <style>
+              .st1 {
+                fill: #fff;
+              }
+            </style>
+            <title>Logo</title>
+            <g id="Symbols">
+              <g id="Logo">
+                <circle
+                  id="Combined-Shape"
+                  fill="currentColor"
+                  cx="15"
+                  cy="15"
+                  r="15"
+                />
+                <path
+                  id="Path-11"
+                  class="st1"
+                  d="M9 8h10.4l3.5 3.5-3.4 3.4 3.5 3.6-3.5 3.5H9z"
+                />
+              </g>
+            </g>
+          </svg>
           <p>Bass Blog</p>
         </div>
 
-        <button class="btn-hamburguer">
+        <button class="btn-hamburguer" id="btnMenu">
           <img src="./img/menu.svg" alt="Menu" />
         </button>
 
-        <ul class="navbar">
-          <li>Home</li>
+        <ul class="navbar" id="menuContainer">
+          <li class="close-btn" id="closeBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </li>
+          <li class="active">Home</li>
           <li>Posts</li>
           <li>Categories</li>
           <li>Contact</li>
@@ -123,117 +168,8 @@
             </svg>
           </a>
         </div>
-        <div class="section-content section-cols-3">
-          <div class="card-post large">
-            <div class="card-img">
-              <img
-                src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80"
-                alt="Post Photo"
-              />
-            </div>
-            <div class="card-body">
-              <p class="tag">Javascript To React</p>
-              <h3 class="title">
-                Learn how to use Map javascript functions to print some data.
-              </h3>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                vel neque id lectus luctus mattis. Nullam vitae tempor nisi, et
-                ullamcorper nibh. Cras nisl leo, pretium in nisl nec, tempor
-                feugiat ante. Etiam feugiat elementum egestas.
-              </p>
-
-              <div class="card-author">
-                <div class="author-img">
-                  <img
-                    src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                    alt="Author Img"
-                  />
-                </div>
-                <div class="author-info">
-                  <p class="author-name">María Simmons</p>
-                  <p class="author-cargo">UX Designer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-post">
-            <div class="card-img">
-              <img
-                src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                alt="Post Photo"
-              />
-            </div>
-            <div class="card-body">
-              <p class="tag">User Experience</p>
-              <h3 class="title">UX challenges to solve in 2021</h3>
-            </div>
-            <div class="card-author">
-              <div class="author-img">
-                <img
-                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                  alt="Author Img"
-                />
-              </div>
-              <div class="autor-info">
-                <p class="author-name">María Simmons</p>
-                <p class="author-cargo">UX Designer</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-post">
-            <div class="card-img">
-              <img
-                src="https://images.unsplash.com/photo-1521391406205-4a6af174a4c2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1375&q=80"
-                alt="Post Photo"
-              />
-            </div>
-            <div class="card-body">
-              <p class="tag">UI Design</p>
-              <h3 class="title">A guide of UI design trends for 2021.</h3>
-            </div>
-            <div class="card-author">
-              <div class="author-img">
-                <img
-                  src="https://images.unsplash.com/photo-1542103749-8ef59b94f47e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                  alt="Author Img"
-                />
-              </div>
-              <div class="autor-info">
-                <p class="author-name">Karla Richards</p>
-                <p class="author-cargo">UI Designer</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-post">
-            <div class="card-img">
-              <img
-                src="https://images.unsplash.com/photo-1573497019414-e44d0759d00e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                alt="Post Photo"
-              />
-            </div>
-            <div class="card-body">
-              <p class="tag">User Experience</p>
-              <h3 class="title">
-                Your resume is just as important as your portfolio.
-              </h3>
-            </div>
-            <div class="card-author">
-              <div class="author-img">
-                <img
-                  src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                  alt="Author Img"
-                />
-              </div>
-              <div class="autor-info">
-                <p class="author-name">Ronald Richards</p>
-                <p class="author-cargo">Software Engineer</p>
-              </div>
-            </div>
-          </div>
+        <div class="section-content section-cols-3" id="postsSection">
+          <!-- *** Aquí se van a imprimir los posts utilizando Javascript *** -->
         </div>
       </div>
     </section>
@@ -266,7 +202,36 @@
       <div class="section footer">
         <div class="wrapper">
           <div class="logo">
-            <img src="./img/logo-footer.svg" alt="Logo footer" />
+            <svg
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 30 30"
+              width="2500"
+              height="2500"
+            >
+              <style>
+                .st1 {
+                  fill: #fff;
+                }
+              </style>
+              <title>Logo</title>
+              <g id="Symbols">
+                <g id="Logo">
+                  <circle
+                    id="Combined-Shape"
+                    fill="currentColor"
+                    cx="15"
+                    cy="15"
+                    r="15"
+                  />
+                  <path
+                    id="Path-11"
+                    class="st1"
+                    d="M9 8h10.4l3.5 3.5-3.4 3.4 3.5 3.6-3.5 3.5H9z"
+                  />
+                </g>
+              </g>
+            </svg>
             <p>BASS BLOG</p>
           </div>
           <div class="separator"></div>
@@ -298,5 +263,7 @@
         This website was made by Nicolás Leal. 2021 Copyright
       </p>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

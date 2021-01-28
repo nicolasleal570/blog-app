@@ -33,6 +33,7 @@ ul li {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -119,6 +120,13 @@ a {
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 30px;
+  /* background: rgb(43, 45, 66); */
+  transition: all 200ms ease-in-out;
+}
+
+.header .menu.scrolled {
+  transition: all 200ms ease-in-out;
+  background: rgb(43, 45, 66);
 }
 
 .header .menu .logo {
@@ -127,10 +135,14 @@ a {
   height: 40px;
 }
 
-.header .menu .logo img {
+.header .menu .logo svg {
   width: 40px;
   height: 100%;
   object-fit: contain;
+  color: var(--dark);
+}
+.header .menu.scrolled .logo svg {
+  color: var(--primary);
 }
 
 .header .menu .logo p {
@@ -143,14 +155,94 @@ a {
 }
 
 .header .menu .btn-hamburguer {
+  outline: none;
   border: none;
   background-color: transparent;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 .header .menu .navbar {
   display: none;
+}
+
+.header .menu .navbar.menu-open {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+.header .menu .navbar li:not(:first-child) {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-left: auto;
+  cursor: pointer;
+  padding-left: 0;
+  /* background: red; */
+  transition: all 200ms ease-in-out;
+}
+
+.header .menu .navbar li:not(:first-child):hover {
+  /* padding-left: 20px; */
+}
+
+.header .menu .navbar li:not(:first-child)::before {
+  content: '';
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+  height: 2px;
+  background: var(--gradientPrimary);
+  transition: all 200ms ease-in-out;
+}
+
+.header .menu .navbar li.active:not(:first-child)::before {
+  display: block;
+}
+
+.header .menu .navbar li:not(:first-child):hover::before {
+  width: 20%;
+}
+
+.header .menu .navbar.menu-open .close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  margin-left: auto;
+  margin-bottom: 40px;
+  font-size: 40px;
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.header .menu .navbar.menu-open .close-btn:hover {
+  border: 1px solid var(--primary);
+  opacity: 1;
+}
+
+.header .menu .navbar.menu-open .close-btn svg {
+  width: 100%;
+  height: 100%;
 }
 
 /* === WELCOME MESSAGE === */
@@ -255,6 +347,11 @@ a {
 .posts .card-post .card-body {
   margin: 10px 0;
 }
+
+.posts .card-post .card-body .description {
+  display: none;
+}
+
 .posts .card-post .card-body .tag {
   margin-bottom: 10px;
 }
@@ -263,6 +360,7 @@ a {
   font-size: 1.25em;
   font-weight: normal;
   text-transform: capitalize;
+  margin-bottom: 10px;
 }
 
 .posts .card-post.large .card-body .description {
@@ -342,11 +440,12 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.footer .logo img {
+.footer .logo svg {
   display: block;
   width: 60px;
   height: 60px;
   margin-right: 20px;
+  color: var(--primary);
 }
 .footer .logo p {
   text-transform: uppercase;
@@ -442,18 +541,56 @@ a {
     display: flex;
     align-items: center;
   }
-  .header .menu .navbar li {
+  .header .menu .navbar li:first-child {
+    display: none;
+  }
+
+  .header .menu .navbar li:not(:first-child) {
+    font-size: 1em;
+    margin-bottom: 0;
+    width: auto;
+    height: auto;
+    margin-left: 0;
+    line-height: inherit;
     list-style: none;
     margin-left: 30px;
+    padding-bottom: 6px;
     color: #fff;
   }
   .header .menu .navbar li.login {
     color: var(--dark);
   }
+
+  .header .menu.scrolled .navbar li.login {
+    color: var(--primary);
+  }
+
+  .header .menu .navbar li:not(:first-child):not(.sign-up) {
+    padding-left: 0;
+  }
+
   .header .menu .navbar li.sign-up {
     background-color: var(--dark);
     padding: 13px 30px;
     border-radius: 5px;
+  }
+
+  .header .menu.scrolled .navbar li.sign-up {
+    background-color: var(--primary);
+    color: #fff;
+  }
+
+  .header .menu .navbar li:not(:first-child)::before {
+    width: 40%;
+    background: var(--dark);
+  }
+
+  .header .menu .navbar li:not(:first-child):hover::before {
+    width: auto;
+  }
+
+  .header .menu .navbar li.active:not(:first-child)::before {
+    display: block;
   }
 
   /* == WELCOME MESSAGE === */
